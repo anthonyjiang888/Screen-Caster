@@ -1,0 +1,1292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BFDF5470EEDCCE02350E502 /* Pods_ScreenService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F93E76E3B85497580D143B /* Pods_ScreenService.framework */; };
+		84013E2523EB9EF20072BBF3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84013E2423EB9EF20072BBF3 /* CloudKit.framework */; };
+		84122C7524639FCD000D85BC /* a.htm in Resources */ = {isa = PBXBuildFile; fileRef = 84122C7424639FCD000D85BC /* a.htm */; };
+		84148AD523E274FD00F119F9 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 84148AD223E274FD00F119F9 /* circle.png */; };
+		84148AD623E274FD00F119F9 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 84148AD323E274FD00F119F9 /* share.png */; };
+		84148AD723E274FD00F119F9 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = 84148AD423E274FD00F119F9 /* question.png */; };
+		84400AB024792EEF007B3547 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84400AAF24792EEF007B3547 /* Notification+Extension.swift */; };
+		84439558245F9E5200CC9DB3 /* M3u8MirrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84439557245F9E5200CC9DB3 /* M3u8MirrorController.swift */; };
+		846E10AB2461BF190064D9D5 /* ImageBaseMirrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E10AA2461BF190064D9D5 /* ImageBaseMirrorController.swift */; };
+		846E10AD2461C08B0064D9D5 /* BaseMirrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E10AC2461C08B0064D9D5 /* BaseMirrorController.swift */; };
+		84821A75233C786F00FD77E1 /* CaptureServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A74233C786F00FD77E1 /* CaptureServer.swift */; };
+		8486992A24781207005B549C /* Scopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A4E233C77C600FD77E1 /* Scopes.swift */; };
+		8486992B24781207005B549C /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A4F233C77C600FD77E1 /* WebSockets.swift */; };
+		8486992C24781207005B549C /* HttpServerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A50233C77C600FD77E1 /* HttpServerIO.swift */; };
+		8486992D24781207005B549C /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A51233C77C600FD77E1 /* Process.swift */; };
+		8486992E24781207005B549C /* Socket+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A52233C77C600FD77E1 /* Socket+Server.swift */; };
+		8486992F24781207005B549C /* String+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A53233C77C600FD77E1 /* String+SHA1.swift */; };
+		8486993024781207005B549C /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A54233C77C600FD77E1 /* String+File.swift */; };
+		8486993124781207005B549C /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A55233C77C600FD77E1 /* Files.swift */; };
+		8486993224781207005B549C /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A56233C77C600FD77E1 /* HttpRequest.swift */; };
+		8486993324781207005B549C /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A57233C77C600FD77E1 /* HttpResponse.swift */; };
+		8486993424781207005B549C /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A58233C77C600FD77E1 /* HttpServer.swift */; };
+		8486993524781207005B549C /* Errno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A59233C77C600FD77E1 /* Errno.swift */; };
+		8486993624781207005B549C /* Socket+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5A233C77C600FD77E1 /* Socket+File.swift */; };
+		8486993724781207005B549C /* String+BASE64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5B233C77C600FD77E1 /* String+BASE64.swift */; };
+		8486993824781207005B549C /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5C233C77C600FD77E1 /* String+Misc.swift */; };
+		8486993924781207005B549C /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5D233C77C600FD77E1 /* HttpRouter.swift */; };
+		8486993A24781207005B549C /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5E233C77C600FD77E1 /* HttpParser.swift */; };
+		8486993B24781207005B549C /* MimeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5F233C77C600FD77E1 /* MimeTypes.swift */; };
+		8486993C24781207005B549C /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A60233C77C600FD77E1 /* Socket.swift */; };
+		8486993D247812A0005B549C /* Scopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A4E233C77C600FD77E1 /* Scopes.swift */; };
+		8486993E247812A0005B549C /* WebSockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A4F233C77C600FD77E1 /* WebSockets.swift */; };
+		8486993F247812A0005B549C /* HttpServerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A50233C77C600FD77E1 /* HttpServerIO.swift */; };
+		84869940247812A0005B549C /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A51233C77C600FD77E1 /* Process.swift */; };
+		84869941247812A0005B549C /* Socket+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A52233C77C600FD77E1 /* Socket+Server.swift */; };
+		84869942247812A0005B549C /* String+SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A53233C77C600FD77E1 /* String+SHA1.swift */; };
+		84869943247812A0005B549C /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A54233C77C600FD77E1 /* String+File.swift */; };
+		84869944247812A0005B549C /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A55233C77C600FD77E1 /* Files.swift */; };
+		84869945247812A0005B549C /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A56233C77C600FD77E1 /* HttpRequest.swift */; };
+		84869946247812A0005B549C /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A57233C77C600FD77E1 /* HttpResponse.swift */; };
+		84869947247812A0005B549C /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A58233C77C600FD77E1 /* HttpServer.swift */; };
+		84869948247812A0005B549C /* Errno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A59233C77C600FD77E1 /* Errno.swift */; };
+		84869949247812A0005B549C /* Socket+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5A233C77C600FD77E1 /* Socket+File.swift */; };
+		8486994A247812A0005B549C /* String+BASE64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5B233C77C600FD77E1 /* String+BASE64.swift */; };
+		8486994B247812A0005B549C /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5C233C77C600FD77E1 /* String+Misc.swift */; };
+		8486994C247812A0005B549C /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5D233C77C600FD77E1 /* HttpRouter.swift */; };
+		8486994D247812A0005B549C /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5E233C77C600FD77E1 /* HttpParser.swift */; };
+		8486994E247812A0005B549C /* MimeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A5F233C77C600FD77E1 /* MimeTypes.swift */; };
+		8486994F247812A0005B549C /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A60233C77C600FD77E1 /* Socket.swift */; };
+		848699512478134F005B549C /* a.htm in Resources */ = {isa = PBXBuildFile; fileRef = 84122C7424639FCD000D85BC /* a.htm */; };
+		848699522478134F005B549C /* freetrial in Resources */ = {isa = PBXBuildFile; fileRef = 9B290F9B23A5053D00B7607F /* freetrial */; };
+		8486995324781588005B549C /* CaptureServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84821A74233C786F00FD77E1 /* CaptureServer.swift */; };
+		8495595024588FB30093B1E4 /* CustomHandlerHLS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8495594F24588FB30093B1E4 /* CustomHandlerHLS.m */; };
+		84955A3F245891580093B1E4 /* MongooseDaemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 849559E2245891560093B1E4 /* MongooseDaemon.m */; };
+		84955A40245891580093B1E4 /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = 849559E3245891560093B1E4 /* mongoose.c */; };
+		84955A42245891580093B1E4 /* H264EncoderCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 849559E8245891570093B1E4 /* H264EncoderCpp.cpp */; };
+		84955A43245891580093B1E4 /* InfiniteAudio.mm in Sources */ = {isa = PBXBuildFile; fileRef = 849559EB245891570093B1E4 /* InfiniteAudio.mm */; };
+		84955A44245891580093B1E4 /* AACEncoderCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 849559EC245891570093B1E4 /* AACEncoderCpp.cpp */; };
+		84955A45245891580093B1E4 /* AACEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 849559EE245891570093B1E4 /* AACEncoder.mm */; };
+		84955A46245891580093B1E4 /* FDKAACEncoderCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 849559EF245891570093B1E4 /* FDKAACEncoderCpp.cpp */; };
+		84955A47245891580093B1E4 /* H264Encoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 849559F0245891570093B1E4 /* H264Encoder.mm */; };
+		84955A48245891580093B1E4 /* FDKAACEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 849559F4245891570093B1E4 /* FDKAACEncoder.mm */; };
+		84955A49245891580093B1E4 /* AACDecoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 849559F5245891570093B1E4 /* AACDecoder.mm */; };
+		84955A4A245891580093B1E4 /* TSSegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 849559F9245891570093B1E4 /* TSSegment.cpp */; };
+		84955A4B245891580093B1E4 /* HLSPlaylistBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 849559FA245891570093B1E4 /* HLSPlaylistBuilder.cpp */; };
+		84955A4C245891580093B1E4 /* HLSSegmenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 849559FB245891570093B1E4 /* HLSSegmenter.cpp */; };
+		84955A51245891580093B1E4 /* TSMuxer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A03245891570093B1E4 /* TSMuxer.cpp */; };
+		84955A53245891580093B1E4 /* PMTFormatter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A06245891570093B1E4 /* PMTFormatter.cpp */; };
+		84955A54245891580093B1E4 /* TSPacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A09245891570093B1E4 /* TSPacket.cpp */; };
+		84955A55245891580093B1E4 /* TSPacketizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A0C245891570093B1E4 /* TSPacketizer.cpp */; };
+		84955A56245891580093B1E4 /* PATFormatter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A0D245891570093B1E4 /* PATFormatter.cpp */; };
+		84955A57245891580093B1E4 /* PESFormatter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A0E245891570093B1E4 /* PESFormatter.cpp */; };
+		84955A5F245891580093B1E4 /* HLSMuxer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84955A1D245891570093B1E4 /* HLSMuxer.mm */; };
+		84955A61245891580093B1E4 /* NetworkConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A20245891570093B1E4 /* NetworkConnection.cpp */; };
+		84955A62245891580093B1E4 /* AVCFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A22245891570093B1E4 /* AVCFrame.cpp */; };
+		84955A63245891580093B1E4 /* BitstreamReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A23245891570093B1E4 /* BitstreamReader.cpp */; };
+		84955A64245891580093B1E4 /* BitstreamWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A28245891570093B1E4 /* BitstreamWriter.cpp */; };
+		84955A65245891580093B1E4 /* Uri.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A29245891570093B1E4 /* Uri.cpp */; };
+		84955A67245891580093B1E4 /* CircularBufferStatic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A32245891570093B1E4 /* CircularBufferStatic.cpp */; };
+		84955A68245891580093B1E4 /* AVCCParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A33245891570093B1E4 /* AVCCParser.cpp */; };
+		84955A69245891580093B1E4 /* MediaFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84955A34245891570093B1E4 /* MediaFrame.cpp */; };
+		84955A772458968B0093B1E4 /* libfdk-aac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84955A762458968B0093B1E4 /* libfdk-aac.a */; };
+		849D9D1A23F39D8700454E64 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D9D1923F39D8700454E64 /* MainController.swift */; };
+		849D9D1C23F3A65700454E64 /* ScreenMirrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D9D1B23F3A65700454E64 /* ScreenMirrorController.swift */; };
+		84B564582476BEC600FD9D6C /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B564572476BEC600FD9D6C /* SettingsController.swift */; };
+		84C354F72335E16B0045482D /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C354F62335E16B0045482D /* ReplayKit.framework */; };
+		84C354FA2335E16B0045482D /* CustomHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C354F92335E16B0045482D /* CustomHandler.swift */; };
+		84C354FE2335E16B0045482D /* ScreenService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84C354F42335E16B0045482D /* ScreenService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84C491022334790B00E44857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C491012334790B00E44857 /* AppDelegate.swift */; };
+		84C491072334790B00E44857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C491052334790B00E44857 /* Main.storyboard */; };
+		84C491092334791000E44857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C491082334791000E44857 /* Assets.xcassets */; };
+		84C758BA23596F35003C4AC6 /* MirroringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C758B423596F35003C4AC6 /* MirroringController.swift */; };
+		84C758BB23596F35003C4AC6 /* FAQController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C758B523596F35003C4AC6 /* FAQController.swift */; };
+		84C758BD23596F35003C4AC6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C758B823596F35003C4AC6 /* TableViewCell.swift */; };
+		84C758BE23596F35003C4AC6 /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C758B923596F35003C4AC6 /* FAQTableViewCell.swift */; };
+		84CCBC3123F4EA9E009562AE /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCBC3023F4EA9E009562AE /* AppUtils.swift */; };
+		84CCBC3523F4F2F4009562AE /* VideoMirrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCBC3423F4F2F3009562AE /* VideoMirrorController.swift */; };
+		84CCBC3723F4FA55009562AE /* ImageMirrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCBC3623F4FA55009562AE /* ImageMirrorController.swift */; };
+		84CCBC3923F4FD41009562AE /* PDFMirrorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCBC3823F4FD41009562AE /* PDFMirrorController.swift */; };
+		84E7297E2334AECD006B9900 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E7297C2334AECC006B9900 /* QRScannerView.swift */; };
+		9B290F9C23A5053D00B7607F /* freetrial in Resources */ = {isa = PBXBuildFile; fileRef = 9B290F9B23A5053D00B7607F /* freetrial */; };
+		BDABDAC6F78AB0B0BEC270AD /* Pods_ScreenCaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51D3D0117595D8D00A247EE /* Pods_ScreenCaster.framework */; };
+		FFBF96CA23A27381008D96C3 /* AppDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF96C223A27381008D96C3 /* AppDataTypes.swift */; };
+		FFBF96CB23A27381008D96C3 /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF96C323A27381008D96C3 /* AppExtensions.swift */; };
+		FFBF96CC23A27381008D96C3 /* AppProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF96C423A27381008D96C3 /* AppProtocols.swift */; };
+		FFBF96CE23A27381008D96C3 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF96C723A27381008D96C3 /* StoreManager.swift */; };
+		FFBF96CF23A27381008D96C3 /* StoreObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF96C823A27381008D96C3 /* StoreObserver.swift */; };
+		FFBF96D023A27381008D96C3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF96C923A27381008D96C3 /* Utilities.swift */; };
+		FFBF96D223A27437008D96C3 /* UpgradeToProController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF96D123A27437008D96C3 /* UpgradeToProController.swift */; };
+		FFBF96D423A2744A008D96C3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF96D323A2744A008D96C3 /* View.swift */; };
+		FFBF96D623A2745F008D96C3 /* HighlightingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF96D523A2745F008D96C3 /* HighlightingButton.swift */; };
+		FFBF96D823A2747D008D96C3 /* InAppPurchaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF96D723A2747D008D96C3 /* InAppPurchaseHandler.swift */; };
+		FFBF96DA23A274ED008D96C3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBF96D923A274ED008D96C3 /* Session.swift */; };
+		FFBF96DC23A2817D008D96C3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBF96DB23A2817D008D96C3 /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84C354FC2335E16B0045482D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C490F62334790A00E44857 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C354F32335E16B0045482D;
+			remoteInfo = BroadcastService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84C355022335E16B0045482D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84C354FE2335E16B0045482D /* ScreenService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08C9AD2267A2A631FF4C9CCA /* Pods-BroadcastService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BroadcastService.debug.xcconfig"; path = "Target Support Files/Pods-BroadcastService/Pods-BroadcastService.debug.xcconfig"; sourceTree = "<group>"; };
+		5C7889FBCA57D4CE148C92CE /* Pods-BroadcastService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BroadcastService.release.xcconfig"; path = "Target Support Files/Pods-BroadcastService/Pods-BroadcastService.release.xcconfig"; sourceTree = "<group>"; };
+		65A55E8EAEBA8B129C1E54C1 /* Pods-ScreenService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenService.debug.xcconfig"; path = "Target Support Files/Pods-ScreenService/Pods-ScreenService.debug.xcconfig"; sourceTree = "<group>"; };
+		67F93E76E3B85497580D143B /* Pods_ScreenService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		691FD61685682104288129E6 /* Pods-ScreenService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenService.release.xcconfig"; path = "Target Support Files/Pods-ScreenService/Pods-ScreenService.release.xcconfig"; sourceTree = "<group>"; };
+		731C6E029391FCC60A337C1A /* Pods-ScreenBroadcaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenBroadcaster.release.xcconfig"; path = "Target Support Files/Pods-ScreenBroadcaster/Pods-ScreenBroadcaster.release.xcconfig"; sourceTree = "<group>"; };
+		815EA51642FB292CFA663AB9 /* Pods-ScreenCaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenCaster.debug.xcconfig"; path = "Target Support Files/Pods-ScreenCaster/Pods-ScreenCaster.debug.xcconfig"; sourceTree = "<group>"; };
+		84013E2423EB9EF20072BBF3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		84122C7424639FCD000D85BC /* a.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = a.htm; sourceTree = "<group>"; };
+		84148AA423E2740D00F119F9 /* Scopes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scopes.swift; sourceTree = "<group>"; };
+		84148AA523E2740D00F119F9 /* WebSockets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSockets.swift; sourceTree = "<group>"; };
+		84148AA623E2740D00F119F9 /* HttpServerIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServerIO.swift; sourceTree = "<group>"; };
+		84148AA723E2740D00F119F9 /* Process.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
+		84148AA823E2740D00F119F9 /* Socket+Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Socket+Server.swift"; sourceTree = "<group>"; };
+		84148AA923E2740D00F119F9 /* String+SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SHA1.swift"; sourceTree = "<group>"; };
+		84148AAA23E2740D00F119F9 /* String+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+File.swift"; sourceTree = "<group>"; };
+		84148AAB23E2740D00F119F9 /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		84148AAC23E2740D00F119F9 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		84148AAD23E2740D00F119F9 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		84148AAE23E2740D00F119F9 /* HttpServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServer.swift; sourceTree = "<group>"; };
+		84148AAF23E2740D00F119F9 /* Errno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errno.swift; sourceTree = "<group>"; };
+		84148AB023E2740D00F119F9 /* Socket+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Socket+File.swift"; sourceTree = "<group>"; };
+		84148AB123E2740D00F119F9 /* String+BASE64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+BASE64.swift"; sourceTree = "<group>"; };
+		84148AB223E2740D00F119F9 /* String+Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Misc.swift"; sourceTree = "<group>"; };
+		84148AB323E2740D00F119F9 /* HttpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		84148AB423E2740D00F119F9 /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpParser.swift; sourceTree = "<group>"; };
+		84148AB523E2740D00F119F9 /* MimeTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeTypes.swift; sourceTree = "<group>"; };
+		84148AB623E2740D00F119F9 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		84148ACA23E2741D00F119F9 /* CaptureServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaptureServer.swift; path = BroadcastService/CaptureServer.swift; sourceTree = SOURCE_ROOT; };
+		84148AD223E274FD00F119F9 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		84148AD323E274FD00F119F9 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		84148AD423E274FD00F119F9 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
+		84148AD823E2751B00F119F9 /* freetrial */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = freetrial; path = BroadcastService/resource/freetrial; sourceTree = SOURCE_ROOT; };
+		84148AD923E2751B00F119F9 /* _freetrial */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = _freetrial; path = BroadcastService/resource/_freetrial; sourceTree = SOURCE_ROOT; };
+		84148ADB23E2751B00F119F9 /* a.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = a.htm; path = BroadcastService/resource/a.htm; sourceTree = SOURCE_ROOT; };
+		84400AAF24792EEF007B3547 /* Notification+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
+		84439557245F9E5200CC9DB3 /* M3u8MirrorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3u8MirrorController.swift; sourceTree = "<group>"; };
+		846E10AA2461BF190064D9D5 /* ImageBaseMirrorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBaseMirrorController.swift; sourceTree = "<group>"; };
+		846E10AC2461C08B0064D9D5 /* BaseMirrorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMirrorController.swift; sourceTree = "<group>"; };
+		84821A4E233C77C600FD77E1 /* Scopes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scopes.swift; sourceTree = "<group>"; };
+		84821A4F233C77C600FD77E1 /* WebSockets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSockets.swift; sourceTree = "<group>"; };
+		84821A50233C77C600FD77E1 /* HttpServerIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServerIO.swift; sourceTree = "<group>"; };
+		84821A51233C77C600FD77E1 /* Process.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
+		84821A52233C77C600FD77E1 /* Socket+Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Socket+Server.swift"; sourceTree = "<group>"; };
+		84821A53233C77C600FD77E1 /* String+SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SHA1.swift"; sourceTree = "<group>"; };
+		84821A54233C77C600FD77E1 /* String+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+File.swift"; sourceTree = "<group>"; };
+		84821A55233C77C600FD77E1 /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		84821A56233C77C600FD77E1 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		84821A57233C77C600FD77E1 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		84821A58233C77C600FD77E1 /* HttpServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServer.swift; sourceTree = "<group>"; };
+		84821A59233C77C600FD77E1 /* Errno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errno.swift; sourceTree = "<group>"; };
+		84821A5A233C77C600FD77E1 /* Socket+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Socket+File.swift"; sourceTree = "<group>"; };
+		84821A5B233C77C600FD77E1 /* String+BASE64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+BASE64.swift"; sourceTree = "<group>"; };
+		84821A5C233C77C600FD77E1 /* String+Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Misc.swift"; sourceTree = "<group>"; };
+		84821A5D233C77C600FD77E1 /* HttpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		84821A5E233C77C600FD77E1 /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpParser.swift; sourceTree = "<group>"; };
+		84821A5F233C77C600FD77E1 /* MimeTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeTypes.swift; sourceTree = "<group>"; };
+		84821A60233C77C600FD77E1 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		84821A74233C786F00FD77E1 /* CaptureServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureServer.swift; sourceTree = "<group>"; };
+		8490B68B233D92EB0098F21A /* ScreenBroadcaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenBroadcaster.entitlements; sourceTree = "<group>"; };
+		8490B68C233D92F70098F21A /* BroadcastService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BroadcastService.entitlements; sourceTree = "<group>"; };
+		8495594D24588FB10093B1E4 /* ScreenService-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScreenService-Bridging-Header.h"; sourceTree = "<group>"; };
+		8495594E24588FB20093B1E4 /* CustomHandlerHLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHandlerHLS.h; sourceTree = "<group>"; };
+		8495594F24588FB30093B1E4 /* CustomHandlerHLS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHandlerHLS.m; sourceTree = "<group>"; };
+		849559DF245891560093B1E4 /* MongooseDaemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongooseDaemon.h; sourceTree = "<group>"; };
+		849559E0245891560093B1E4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		849559E1245891560093B1E4 /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
+		849559E2245891560093B1E4 /* MongooseDaemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongooseDaemon.m; sourceTree = "<group>"; };
+		849559E3245891560093B1E4 /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoose.c; sourceTree = "<group>"; };
+		849559E4245891560093B1E4 /* README.rdoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rdoc; sourceTree = "<group>"; };
+		849559E6245891570093B1E4 /* AACEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AACEncoder.h; sourceTree = "<group>"; };
+		849559E7245891570093B1E4 /* FDKAACEncoderCpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDKAACEncoderCpp.h; sourceTree = "<group>"; };
+		849559E8245891570093B1E4 /* H264EncoderCpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = H264EncoderCpp.cpp; sourceTree = "<group>"; };
+		849559E9245891570093B1E4 /* InfiniteAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteAudio.h; sourceTree = "<group>"; };
+		849559EA245891570093B1E4 /* H264EncoderCpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264EncoderCpp.h; sourceTree = "<group>"; };
+		849559EB245891570093B1E4 /* InfiniteAudio.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = InfiniteAudio.mm; sourceTree = "<group>"; };
+		849559EC245891570093B1E4 /* AACEncoderCpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AACEncoderCpp.cpp; sourceTree = "<group>"; };
+		849559ED245891570093B1E4 /* FDKAACEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDKAACEncoder.h; sourceTree = "<group>"; };
+		849559EE245891570093B1E4 /* AACEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AACEncoder.mm; sourceTree = "<group>"; };
+		849559EF245891570093B1E4 /* FDKAACEncoderCpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FDKAACEncoderCpp.cpp; sourceTree = "<group>"; };
+		849559F0245891570093B1E4 /* H264Encoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = H264Encoder.mm; sourceTree = "<group>"; };
+		849559F1245891570093B1E4 /* AACEncoderCpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AACEncoderCpp.h; sourceTree = "<group>"; };
+		849559F2245891570093B1E4 /* H264Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264Encoder.h; sourceTree = "<group>"; };
+		849559F3245891570093B1E4 /* AACDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AACDecoder.h; sourceTree = "<group>"; };
+		849559F4245891570093B1E4 /* FDKAACEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FDKAACEncoder.mm; sourceTree = "<group>"; };
+		849559F5245891570093B1E4 /* AACDecoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AACDecoder.mm; sourceTree = "<group>"; };
+		849559F8245891570093B1E4 /* TSSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSegment.h; sourceTree = "<group>"; };
+		849559F9245891570093B1E4 /* TSSegment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TSSegment.cpp; sourceTree = "<group>"; };
+		849559FA245891570093B1E4 /* HLSPlaylistBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HLSPlaylistBuilder.cpp; sourceTree = "<group>"; };
+		849559FB245891570093B1E4 /* HLSSegmenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HLSSegmenter.cpp; sourceTree = "<group>"; };
+		849559FC245891570093B1E4 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		849559FD245891570093B1E4 /* HLSSegmenter.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HLSSegmenter.vcxproj.filters; sourceTree = "<group>"; };
+		849559FE245891570093B1E4 /* HLSSegmenter.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HLSSegmenter.vcxproj; sourceTree = "<group>"; };
+		849559FF245891570093B1E4 /* HLSSegmenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSSegmenter.h; sourceTree = "<group>"; };
+		84955A00245891570093B1E4 /* HLSPlaylistBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSPlaylistBuilder.h; sourceTree = "<group>"; };
+		84955A02245891570093B1E4 /* TSMuxer.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TSMuxer.vcxproj.filters; sourceTree = "<group>"; };
+		84955A03245891570093B1E4 /* TSMuxer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TSMuxer.cpp; sourceTree = "<group>"; };
+		84955A04245891570093B1E4 /* TSMuxer.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TSMuxer.vcxproj; sourceTree = "<group>"; };
+		84955A05245891570093B1E4 /* PESFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PESFormatter.h; sourceTree = "<group>"; };
+		84955A06245891570093B1E4 /* PMTFormatter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMTFormatter.cpp; sourceTree = "<group>"; };
+		84955A07245891570093B1E4 /* TSPacketizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPacketizer.h; sourceTree = "<group>"; };
+		84955A08245891570093B1E4 /* TSMuxer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMuxer.h; sourceTree = "<group>"; };
+		84955A09245891570093B1E4 /* TSPacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TSPacket.cpp; sourceTree = "<group>"; };
+		84955A0A245891570093B1E4 /* TSPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPacket.h; sourceTree = "<group>"; };
+		84955A0B245891570093B1E4 /* TSProgramDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProgramDescriptor.h; sourceTree = "<group>"; };
+		84955A0C245891570093B1E4 /* TSPacketizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TSPacketizer.cpp; sourceTree = "<group>"; };
+		84955A0D245891570093B1E4 /* PATFormatter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PATFormatter.cpp; sourceTree = "<group>"; };
+		84955A0E245891570093B1E4 /* PESFormatter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PESFormatter.cpp; sourceTree = "<group>"; };
+		84955A0F245891570093B1E4 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		84955A10245891570093B1E4 /* PMTFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMTFormatter.h; sourceTree = "<group>"; };
+		84955A11245891570093B1E4 /* TSTrackDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTrackDescriptor.h; sourceTree = "<group>"; };
+		84955A12245891570093B1E4 /* PATFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATFormatter.h; sourceTree = "<group>"; };
+		84955A13245891570093B1E4 /* LiveStreamer.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LiveStreamer.sln; sourceTree = "<group>"; };
+		84955A14245891570093B1E4 /* HLSMuxer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSMuxer.h; sourceTree = "<group>"; };
+		84955A1D245891570093B1E4 /* HLSMuxer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HLSMuxer.mm; sourceTree = "<group>"; };
+		84955A1F245891570093B1E4 /* Media.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Media.vcxproj.filters; sourceTree = "<group>"; };
+		84955A20245891570093B1E4 /* NetworkConnection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkConnection.cpp; sourceTree = "<group>"; };
+		84955A21245891570093B1E4 /* BitstreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitstreamWriter.h; sourceTree = "<group>"; };
+		84955A22245891570093B1E4 /* AVCFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AVCFrame.cpp; sourceTree = "<group>"; };
+		84955A23245891570093B1E4 /* BitstreamReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitstreamReader.cpp; sourceTree = "<group>"; };
+		84955A24245891570093B1E4 /* MediaTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTransformer.h; sourceTree = "<group>"; };
+		84955A25245891570093B1E4 /* NetworkBitstreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkBitstreamWriter.h; sourceTree = "<group>"; };
+		84955A26245891570093B1E4 /* Uri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uri.h; sourceTree = "<group>"; };
+		84955A27245891570093B1E4 /* CircularBufferStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularBufferStatic.h; sourceTree = "<group>"; };
+		84955A28245891570093B1E4 /* BitstreamWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitstreamWriter.cpp; sourceTree = "<group>"; };
+		84955A29245891570093B1E4 /* Uri.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Uri.cpp; sourceTree = "<group>"; };
+		84955A2A245891570093B1E4 /* Media.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Media.vcxproj; sourceTree = "<group>"; };
+		84955A2B245891570093B1E4 /* ProgramDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramDescriptor.h; sourceTree = "<group>"; };
+		84955A2C245891570093B1E4 /* MediaDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaDescriptor.h; sourceTree = "<group>"; };
+		84955A2D245891570093B1E4 /* Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
+		84955A2E245891570093B1E4 /* MediaFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFrame.h; sourceTree = "<group>"; };
+		84955A2F245891570093B1E4 /* NetworkConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkConnection.h; sourceTree = "<group>"; };
+		84955A30245891570093B1E4 /* IMuxer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMuxer.h; sourceTree = "<group>"; };
+		84955A31245891570093B1E4 /* NetworkBitstreamReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkBitstreamReader.h; sourceTree = "<group>"; };
+		84955A32245891570093B1E4 /* CircularBufferStatic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularBufferStatic.cpp; sourceTree = "<group>"; };
+		84955A33245891570093B1E4 /* AVCCParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AVCCParser.cpp; sourceTree = "<group>"; };
+		84955A34245891570093B1E4 /* MediaFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediaFrame.cpp; sourceTree = "<group>"; };
+		84955A35245891570093B1E4 /* AVCFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCFrame.h; sourceTree = "<group>"; };
+		84955A36245891570093B1E4 /* IMultiTrackReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMultiTrackReceiver.h; sourceTree = "<group>"; };
+		84955A37245891570093B1E4 /* IReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IReceiver.h; sourceTree = "<group>"; };
+		84955A38245891570093B1E4 /* BitstreamReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitstreamReader.h; sourceTree = "<group>"; };
+		84955A39245891570093B1E4 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		84955A3A245891570093B1E4 /* MediaBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaBuffer.h; sourceTree = "<group>"; };
+		84955A3B245891570093B1E4 /* MediaCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaCallback.h; sourceTree = "<group>"; };
+		84955A3C245891570093B1E4 /* CRC32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRC32.h; sourceTree = "<group>"; };
+		84955A3D245891570093B1E4 /* AVCCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCCParser.h; sourceTree = "<group>"; };
+		84955A762458968B0093B1E4 /* libfdk-aac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libfdk-aac.a"; path = "fdkaac/lib/libfdk-aac.a"; sourceTree = "<group>"; };
+		849D9D1923F39D8700454E64 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		849D9D1B23F3A65700454E64 /* ScreenMirrorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenMirrorController.swift; sourceTree = "<group>"; };
+		84B564572476BEC600FD9D6C /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		84C354F42335E16B0045482D /* ScreenService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C354F62335E16B0045482D /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		84C354F92335E16B0045482D /* CustomHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHandler.swift; sourceTree = "<group>"; };
+		84C354FB2335E16B0045482D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C490FE2334790B00E44857 /* ScreenCaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenCaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C491012334790B00E44857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84C491062334790B00E44857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84C491082334791000E44857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C4910D2334791000E44857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C758B423596F35003C4AC6 /* MirroringController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirroringController.swift; sourceTree = "<group>"; };
+		84C758B523596F35003C4AC6 /* FAQController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQController.swift; sourceTree = "<group>"; };
+		84C758B823596F35003C4AC6 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		84C758B923596F35003C4AC6 /* FAQTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
+		84CCBC3023F4EA9E009562AE /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		84CCBC3423F4F2F3009562AE /* VideoMirrorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMirrorController.swift; sourceTree = "<group>"; };
+		84CCBC3623F4FA55009562AE /* ImageMirrorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMirrorController.swift; sourceTree = "<group>"; };
+		84CCBC3823F4FD41009562AE /* PDFMirrorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFMirrorController.swift; sourceTree = "<group>"; };
+		84E7297C2334AECC006B9900 /* QRScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		9B290F9B23A5053D00B7607F /* freetrial */ = {isa = PBXFileReference; lastKnownFileType = file; path = freetrial; sourceTree = "<group>"; };
+		B51D3D0117595D8D00A247EE /* Pods_ScreenCaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenCaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2550F596AE9323EF6F5D1F6 /* Pods-ScreenCaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenCaster.release.xcconfig"; path = "Target Support Files/Pods-ScreenCaster/Pods-ScreenCaster.release.xcconfig"; sourceTree = "<group>"; };
+		F87280CC4CD402EA9BDD53D4 /* Pods-ScreenBroadcaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenBroadcaster.debug.xcconfig"; path = "Target Support Files/Pods-ScreenBroadcaster/Pods-ScreenBroadcaster.debug.xcconfig"; sourceTree = "<group>"; };
+		FFBF96C223A27381008D96C3 /* AppDataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDataTypes.swift; sourceTree = "<group>"; };
+		FFBF96C323A27381008D96C3 /* AppExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
+		FFBF96C423A27381008D96C3 /* AppProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppProtocols.swift; sourceTree = "<group>"; };
+		FFBF96C723A27381008D96C3 /* StoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		FFBF96C823A27381008D96C3 /* StoreObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreObserver.swift; sourceTree = "<group>"; };
+		FFBF96C923A27381008D96C3 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FFBF96D123A27437008D96C3 /* UpgradeToProController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeToProController.swift; sourceTree = "<group>"; };
+		FFBF96D323A2744A008D96C3 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		FFBF96D523A2745F008D96C3 /* HighlightingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightingButton.swift; sourceTree = "<group>"; };
+		FFBF96D723A2747D008D96C3 /* InAppPurchaseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchaseHandler.swift; sourceTree = "<group>"; };
+		FFBF96D923A274ED008D96C3 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		FFBF96DB23A2817D008D96C3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C354F12335E16B0045482D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84955A772458968B0093B1E4 /* libfdk-aac.a in Frameworks */,
+				84C354F72335E16B0045482D /* ReplayKit.framework in Frameworks */,
+				2BFDF5470EEDCCE02350E502 /* Pods_ScreenService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C490FB2334790B00E44857 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBF96DC23A2817D008D96C3 /* StoreKit.framework in Frameworks */,
+				84013E2523EB9EF20072BBF3 /* CloudKit.framework in Frameworks */,
+				BDABDAC6F78AB0B0BEC270AD /* Pods_ScreenCaster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D3243C3644B2435BA0C9385 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08C9AD2267A2A631FF4C9CCA /* Pods-BroadcastService.debug.xcconfig */,
+				5C7889FBCA57D4CE148C92CE /* Pods-BroadcastService.release.xcconfig */,
+				F87280CC4CD402EA9BDD53D4 /* Pods-ScreenBroadcaster.debug.xcconfig */,
+				731C6E029391FCC60A337C1A /* Pods-ScreenBroadcaster.release.xcconfig */,
+				815EA51642FB292CFA663AB9 /* Pods-ScreenCaster.debug.xcconfig */,
+				C2550F596AE9323EF6F5D1F6 /* Pods-ScreenCaster.release.xcconfig */,
+				65A55E8EAEBA8B129C1E54C1 /* Pods-ScreenService.debug.xcconfig */,
+				691FD61685682104288129E6 /* Pods-ScreenService.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84148AA323E2740D00F119F9 /* library */ = {
+			isa = PBXGroup;
+			children = (
+				84148AA423E2740D00F119F9 /* Scopes.swift */,
+				84148AA523E2740D00F119F9 /* WebSockets.swift */,
+				84148AA623E2740D00F119F9 /* HttpServerIO.swift */,
+				84148AA723E2740D00F119F9 /* Process.swift */,
+				84148AA823E2740D00F119F9 /* Socket+Server.swift */,
+				84148AA923E2740D00F119F9 /* String+SHA1.swift */,
+				84148AAA23E2740D00F119F9 /* String+File.swift */,
+				84148AAB23E2740D00F119F9 /* Files.swift */,
+				84148AAC23E2740D00F119F9 /* HttpRequest.swift */,
+				84148AAD23E2740D00F119F9 /* HttpResponse.swift */,
+				84148AAE23E2740D00F119F9 /* HttpServer.swift */,
+				84148AAF23E2740D00F119F9 /* Errno.swift */,
+				84148AB023E2740D00F119F9 /* Socket+File.swift */,
+				84148AB123E2740D00F119F9 /* String+BASE64.swift */,
+				84148AB223E2740D00F119F9 /* String+Misc.swift */,
+				84148AB323E2740D00F119F9 /* HttpRouter.swift */,
+				84148AB423E2740D00F119F9 /* HttpParser.swift */,
+				84148AB523E2740D00F119F9 /* MimeTypes.swift */,
+				84148AB623E2740D00F119F9 /* Socket.swift */,
+			);
+			name = library;
+			path = BroadcastService/library;
+			sourceTree = SOURCE_ROOT;
+		};
+		84821A4D233C77C600FD77E1 /* library */ = {
+			isa = PBXGroup;
+			children = (
+				84821A4E233C77C600FD77E1 /* Scopes.swift */,
+				84821A4F233C77C600FD77E1 /* WebSockets.swift */,
+				84821A50233C77C600FD77E1 /* HttpServerIO.swift */,
+				84821A51233C77C600FD77E1 /* Process.swift */,
+				84821A52233C77C600FD77E1 /* Socket+Server.swift */,
+				84821A53233C77C600FD77E1 /* String+SHA1.swift */,
+				84821A54233C77C600FD77E1 /* String+File.swift */,
+				84821A55233C77C600FD77E1 /* Files.swift */,
+				84821A56233C77C600FD77E1 /* HttpRequest.swift */,
+				84821A57233C77C600FD77E1 /* HttpResponse.swift */,
+				84821A58233C77C600FD77E1 /* HttpServer.swift */,
+				84821A59233C77C600FD77E1 /* Errno.swift */,
+				84821A5A233C77C600FD77E1 /* Socket+File.swift */,
+				84821A5B233C77C600FD77E1 /* String+BASE64.swift */,
+				84821A5C233C77C600FD77E1 /* String+Misc.swift */,
+				84821A5D233C77C600FD77E1 /* HttpRouter.swift */,
+				84821A5E233C77C600FD77E1 /* HttpParser.swift */,
+				84821A5F233C77C600FD77E1 /* MimeTypes.swift */,
+				84821A60233C77C600FD77E1 /* Socket.swift */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		849559DE245891560093B1E4 /* MongooseDaemon */ = {
+			isa = PBXGroup;
+			children = (
+				849559DF245891560093B1E4 /* MongooseDaemon.h */,
+				849559E0245891560093B1E4 /* LICENSE */,
+				849559E1245891560093B1E4 /* mongoose.h */,
+				849559E2245891560093B1E4 /* MongooseDaemon.m */,
+				849559E3245891560093B1E4 /* mongoose.c */,
+				849559E4245891560093B1E4 /* README.rdoc */,
+			);
+			path = MongooseDaemon;
+			sourceTree = "<group>";
+		};
+		849559E5245891570093B1E4 /* Codecs */ = {
+			isa = PBXGroup;
+			children = (
+				849559E6245891570093B1E4 /* AACEncoder.h */,
+				849559E7245891570093B1E4 /* FDKAACEncoderCpp.h */,
+				849559E8245891570093B1E4 /* H264EncoderCpp.cpp */,
+				849559E9245891570093B1E4 /* InfiniteAudio.h */,
+				849559EA245891570093B1E4 /* H264EncoderCpp.h */,
+				849559EB245891570093B1E4 /* InfiniteAudio.mm */,
+				849559EC245891570093B1E4 /* AACEncoderCpp.cpp */,
+				849559ED245891570093B1E4 /* FDKAACEncoder.h */,
+				849559EE245891570093B1E4 /* AACEncoder.mm */,
+				849559EF245891570093B1E4 /* FDKAACEncoderCpp.cpp */,
+				849559F0245891570093B1E4 /* H264Encoder.mm */,
+				849559F1245891570093B1E4 /* AACEncoderCpp.h */,
+				849559F2245891570093B1E4 /* H264Encoder.h */,
+				849559F3245891570093B1E4 /* AACDecoder.h */,
+				849559F4245891570093B1E4 /* FDKAACEncoder.mm */,
+				849559F5245891570093B1E4 /* AACDecoder.mm */,
+			);
+			path = Codecs;
+			sourceTree = "<group>";
+		};
+		849559F6245891570093B1E4 /* Livestreamer */ = {
+			isa = PBXGroup;
+			children = (
+				849559F7245891570093B1E4 /* HLSSegmenter */,
+				84955A01245891570093B1E4 /* TSMuxer */,
+				84955A13245891570093B1E4 /* LiveStreamer.sln */,
+				84955A14245891570093B1E4 /* HLSMuxer.h */,
+				84955A1D245891570093B1E4 /* HLSMuxer.mm */,
+				84955A1E245891570093B1E4 /* Media */,
+			);
+			path = Livestreamer;
+			sourceTree = "<group>";
+		};
+		849559F7245891570093B1E4 /* HLSSegmenter */ = {
+			isa = PBXGroup;
+			children = (
+				849559F8245891570093B1E4 /* TSSegment.h */,
+				849559F9245891570093B1E4 /* TSSegment.cpp */,
+				849559FA245891570093B1E4 /* HLSPlaylistBuilder.cpp */,
+				849559FB245891570093B1E4 /* HLSSegmenter.cpp */,
+				849559FC245891570093B1E4 /* ReadMe.txt */,
+				849559FD245891570093B1E4 /* HLSSegmenter.vcxproj.filters */,
+				849559FE245891570093B1E4 /* HLSSegmenter.vcxproj */,
+				849559FF245891570093B1E4 /* HLSSegmenter.h */,
+				84955A00245891570093B1E4 /* HLSPlaylistBuilder.h */,
+			);
+			path = HLSSegmenter;
+			sourceTree = "<group>";
+		};
+		84955A01245891570093B1E4 /* TSMuxer */ = {
+			isa = PBXGroup;
+			children = (
+				84955A02245891570093B1E4 /* TSMuxer.vcxproj.filters */,
+				84955A03245891570093B1E4 /* TSMuxer.cpp */,
+				84955A04245891570093B1E4 /* TSMuxer.vcxproj */,
+				84955A05245891570093B1E4 /* PESFormatter.h */,
+				84955A06245891570093B1E4 /* PMTFormatter.cpp */,
+				84955A07245891570093B1E4 /* TSPacketizer.h */,
+				84955A08245891570093B1E4 /* TSMuxer.h */,
+				84955A09245891570093B1E4 /* TSPacket.cpp */,
+				84955A0A245891570093B1E4 /* TSPacket.h */,
+				84955A0B245891570093B1E4 /* TSProgramDescriptor.h */,
+				84955A0C245891570093B1E4 /* TSPacketizer.cpp */,
+				84955A0D245891570093B1E4 /* PATFormatter.cpp */,
+				84955A0E245891570093B1E4 /* PESFormatter.cpp */,
+				84955A0F245891570093B1E4 /* ReadMe.txt */,
+				84955A10245891570093B1E4 /* PMTFormatter.h */,
+				84955A11245891570093B1E4 /* TSTrackDescriptor.h */,
+				84955A12245891570093B1E4 /* PATFormatter.h */,
+			);
+			path = TSMuxer;
+			sourceTree = "<group>";
+		};
+		84955A1E245891570093B1E4 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				84955A1F245891570093B1E4 /* Media.vcxproj.filters */,
+				84955A20245891570093B1E4 /* NetworkConnection.cpp */,
+				84955A21245891570093B1E4 /* BitstreamWriter.h */,
+				84955A22245891570093B1E4 /* AVCFrame.cpp */,
+				84955A23245891570093B1E4 /* BitstreamReader.cpp */,
+				84955A24245891570093B1E4 /* MediaTransformer.h */,
+				84955A25245891570093B1E4 /* NetworkBitstreamWriter.h */,
+				84955A26245891570093B1E4 /* Uri.h */,
+				84955A27245891570093B1E4 /* CircularBufferStatic.h */,
+				84955A28245891570093B1E4 /* BitstreamWriter.cpp */,
+				84955A29245891570093B1E4 /* Uri.cpp */,
+				84955A2A245891570093B1E4 /* Media.vcxproj */,
+				84955A2B245891570093B1E4 /* ProgramDescriptor.h */,
+				84955A2C245891570093B1E4 /* MediaDescriptor.h */,
+				84955A2D245891570093B1E4 /* Enums.h */,
+				84955A2E245891570093B1E4 /* MediaFrame.h */,
+				84955A2F245891570093B1E4 /* NetworkConnection.h */,
+				84955A30245891570093B1E4 /* IMuxer.h */,
+				84955A31245891570093B1E4 /* NetworkBitstreamReader.h */,
+				84955A32245891570093B1E4 /* CircularBufferStatic.cpp */,
+				84955A33245891570093B1E4 /* AVCCParser.cpp */,
+				84955A34245891570093B1E4 /* MediaFrame.cpp */,
+				84955A35245891570093B1E4 /* AVCFrame.h */,
+				84955A36245891570093B1E4 /* IMultiTrackReceiver.h */,
+				84955A37245891570093B1E4 /* IReceiver.h */,
+				84955A38245891570093B1E4 /* BitstreamReader.h */,
+				84955A39245891570093B1E4 /* ReadMe.txt */,
+				84955A3A245891570093B1E4 /* MediaBuffer.h */,
+				84955A3B245891570093B1E4 /* MediaCallback.h */,
+				84955A3C245891570093B1E4 /* CRC32.h */,
+				84955A3D245891570093B1E4 /* AVCCParser.h */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		849A1B96233DF69B0049B6CA /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				84122C7424639FCD000D85BC /* a.htm */,
+				9B290F9B23A5053D00B7607F /* freetrial */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		84C354F52335E16B0045482D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84955A762458968B0093B1E4 /* libfdk-aac.a */,
+				84013E2423EB9EF20072BBF3 /* CloudKit.framework */,
+				FFBF96DB23A2817D008D96C3 /* StoreKit.framework */,
+				84C354F62335E16B0045482D /* ReplayKit.framework */,
+				B51D3D0117595D8D00A247EE /* Pods_ScreenCaster.framework */,
+				67F93E76E3B85497580D143B /* Pods_ScreenService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84C354F82335E16B0045482D /* ScreenService */ = {
+			isa = PBXGroup;
+			children = (
+				849A1B96233DF69B0049B6CA /* resource */,
+				8490B68C233D92F70098F21A /* BroadcastService.entitlements */,
+				84821A4D233C77C600FD77E1 /* library */,
+				84821A74233C786F00FD77E1 /* CaptureServer.swift */,
+				84C354F92335E16B0045482D /* CustomHandler.swift */,
+				8495594E24588FB20093B1E4 /* CustomHandlerHLS.h */,
+				8495594F24588FB30093B1E4 /* CustomHandlerHLS.m */,
+				84C354FB2335E16B0045482D /* Info.plist */,
+				8495594D24588FB10093B1E4 /* ScreenService-Bridging-Header.h */,
+			);
+			path = ScreenService;
+			sourceTree = "<group>";
+		};
+		84C490F52334790A00E44857 = {
+			isa = PBXGroup;
+			children = (
+				84C491002334790B00E44857 /* ScreenCaster */,
+				84C354F82335E16B0045482D /* ScreenService */,
+				84C7AA07247368BA00C1018E /* ExternalLibrary */,
+				84C354F52335E16B0045482D /* Frameworks */,
+				84C490FF2334790B00E44857 /* Products */,
+				5D3243C3644B2435BA0C9385 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		84C490FF2334790B00E44857 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C490FE2334790B00E44857 /* ScreenCaster.app */,
+				84C354F42335E16B0045482D /* ScreenService.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C491002334790B00E44857 /* ScreenCaster */ = {
+			isa = PBXGroup;
+			children = (
+				84C758B323596F35003C4AC6 /* controller */,
+				84C758B623596F35003C4AC6 /* views */,
+				FFBF96C123A27381008D96C3 /* InApp Purchase */,
+				84148AA323E2740D00F119F9 /* library */,
+				84C4913C2334838300E44857 /* resource */,
+				8490B68B233D92EB0098F21A /* ScreenBroadcaster.entitlements */,
+				84C491012334790B00E44857 /* AppDelegate.swift */,
+				84CCBC3023F4EA9E009562AE /* AppUtils.swift */,
+				84148ACA23E2741D00F119F9 /* CaptureServer.swift */,
+				84E7297C2334AECC006B9900 /* QRScannerView.swift */,
+				84C491052334790B00E44857 /* Main.storyboard */,
+				84400AAF24792EEF007B3547 /* Notification+Extension.swift */,
+				84C491082334791000E44857 /* Assets.xcassets */,
+				84C4910D2334791000E44857 /* Info.plist */,
+			);
+			path = ScreenCaster;
+			sourceTree = "<group>";
+		};
+		84C4913C2334838300E44857 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				84148AD923E2751B00F119F9 /* _freetrial */,
+				84148ADB23E2751B00F119F9 /* a.htm */,
+				84148AD823E2751B00F119F9 /* freetrial */,
+				84148AD223E274FD00F119F9 /* circle.png */,
+				84148AD423E274FD00F119F9 /* question.png */,
+				84148AD323E274FD00F119F9 /* share.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		84C758B323596F35003C4AC6 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				849D9D1923F39D8700454E64 /* MainController.swift */,
+				846E10AC2461C08B0064D9D5 /* BaseMirrorController.swift */,
+				846E10AA2461BF190064D9D5 /* ImageBaseMirrorController.swift */,
+				849D9D1B23F3A65700454E64 /* ScreenMirrorController.swift */,
+				84CCBC3423F4F2F3009562AE /* VideoMirrorController.swift */,
+				84CCBC3623F4FA55009562AE /* ImageMirrorController.swift */,
+				84CCBC3823F4FD41009562AE /* PDFMirrorController.swift */,
+				84439557245F9E5200CC9DB3 /* M3u8MirrorController.swift */,
+				84B564572476BEC600FD9D6C /* SettingsController.swift */,
+				FFBF96D123A27437008D96C3 /* UpgradeToProController.swift */,
+				84C758B423596F35003C4AC6 /* MirroringController.swift */,
+				84C758B523596F35003C4AC6 /* FAQController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		84C758B623596F35003C4AC6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				84C758B923596F35003C4AC6 /* FAQTableViewCell.swift */,
+				FFBF96D523A2745F008D96C3 /* HighlightingButton.swift */,
+				84C758B823596F35003C4AC6 /* TableViewCell.swift */,
+				FFBF96D323A2744A008D96C3 /* View.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		84C7AA07247368BA00C1018E /* ExternalLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				849559E5245891570093B1E4 /* Codecs */,
+				849559F6245891570093B1E4 /* Livestreamer */,
+				849559DE245891560093B1E4 /* MongooseDaemon */,
+			);
+			path = ExternalLibrary;
+			sourceTree = "<group>";
+		};
+		FFBF96C123A27381008D96C3 /* InApp Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				FFBF96D923A274ED008D96C3 /* Session.swift */,
+				FFBF96D723A2747D008D96C3 /* InAppPurchaseHandler.swift */,
+				FFBF96C223A27381008D96C3 /* AppDataTypes.swift */,
+				FFBF96C323A27381008D96C3 /* AppExtensions.swift */,
+				FFBF96C423A27381008D96C3 /* AppProtocols.swift */,
+				FFBF96C723A27381008D96C3 /* StoreManager.swift */,
+				FFBF96C823A27381008D96C3 /* StoreObserver.swift */,
+				FFBF96C923A27381008D96C3 /* Utilities.swift */,
+			);
+			path = "InApp Purchase";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84C354F32335E16B0045482D /* ScreenService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C355012335E16B0045482D /* Build configuration list for PBXNativeTarget "ScreenService" */;
+			buildPhases = (
+				12036CF49DBF4CFD9A9E226E /* [CP] Check Pods Manifest.lock */,
+				84C354F02335E16B0045482D /* Sources */,
+				84C354F12335E16B0045482D /* Frameworks */,
+				84C354F22335E16B0045482D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenService;
+			productName = BroadcastService;
+			productReference = 84C354F42335E16B0045482D /* ScreenService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		84C490FD2334790B00E44857 /* ScreenCaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C491102334791000E44857 /* Build configuration list for PBXNativeTarget "ScreenCaster" */;
+			buildPhases = (
+				F5797D3C0ABD07AFD35370BE /* [CP] Check Pods Manifest.lock */,
+				84C490FA2334790B00E44857 /* Sources */,
+				84C490FB2334790B00E44857 /* Frameworks */,
+				84C490FC2334790B00E44857 /* Resources */,
+				84C355022335E16B0045482D /* Embed App Extensions */,
+				0E75DA7007A35337F41B7A98 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84C354FD2335E16B0045482D /* PBXTargetDependency */,
+			);
+			name = ScreenCaster;
+			productName = ScreenBroadcaster;
+			productReference = 84C490FE2334790B00E44857 /* ScreenCaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C490F62334790A00E44857 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					84C354F32335E16B0045482D = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1140;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					84C490FD2334790B00E44857 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1100;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 84C490F92334790A00E44857 /* Build configuration list for PBXProject "ScreenCaster" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84C490F52334790A00E44857;
+			productRefGroup = 84C490FF2334790B00E44857 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84C490FD2334790B00E44857 /* ScreenCaster */,
+				84C354F32335E16B0045482D /* ScreenService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C354F22335E16B0045482D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B290F9C23A5053D00B7607F /* freetrial in Resources */,
+				84122C7524639FCD000D85BC /* a.htm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C490FC2334790B00E44857 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848699512478134F005B549C /* a.htm in Resources */,
+				848699522478134F005B549C /* freetrial in Resources */,
+				84148AD723E274FD00F119F9 /* question.png in Resources */,
+				84148AD523E274FD00F119F9 /* circle.png in Resources */,
+				84C491092334791000E44857 /* Assets.xcassets in Resources */,
+				84C491072334790B00E44857 /* Main.storyboard in Resources */,
+				84148AD623E274FD00F119F9 /* share.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E75DA7007A35337F41B7A98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenCaster/Pods-ScreenCaster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenCaster/Pods-ScreenCaster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenCaster/Pods-ScreenCaster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12036CF49DBF4CFD9A9E226E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5797D3C0ABD07AFD35370BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenCaster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C354F02335E16B0045482D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8486992A24781207005B549C /* Scopes.swift in Sources */,
+				8486992B24781207005B549C /* WebSockets.swift in Sources */,
+				8486992C24781207005B549C /* HttpServerIO.swift in Sources */,
+				8486992D24781207005B549C /* Process.swift in Sources */,
+				8486992E24781207005B549C /* Socket+Server.swift in Sources */,
+				8486992F24781207005B549C /* String+SHA1.swift in Sources */,
+				8486993024781207005B549C /* String+File.swift in Sources */,
+				8486993124781207005B549C /* Files.swift in Sources */,
+				8486993224781207005B549C /* HttpRequest.swift in Sources */,
+				8486993324781207005B549C /* HttpResponse.swift in Sources */,
+				8486993424781207005B549C /* HttpServer.swift in Sources */,
+				8486993524781207005B549C /* Errno.swift in Sources */,
+				8486993624781207005B549C /* Socket+File.swift in Sources */,
+				8486993724781207005B549C /* String+BASE64.swift in Sources */,
+				8486993824781207005B549C /* String+Misc.swift in Sources */,
+				8486993924781207005B549C /* HttpRouter.swift in Sources */,
+				8486993A24781207005B549C /* HttpParser.swift in Sources */,
+				8486993B24781207005B549C /* MimeTypes.swift in Sources */,
+				8486993C24781207005B549C /* Socket.swift in Sources */,
+				84955A67245891580093B1E4 /* CircularBufferStatic.cpp in Sources */,
+				84955A61245891580093B1E4 /* NetworkConnection.cpp in Sources */,
+				84955A43245891580093B1E4 /* InfiniteAudio.mm in Sources */,
+				84955A46245891580093B1E4 /* FDKAACEncoderCpp.cpp in Sources */,
+				84955A4C245891580093B1E4 /* HLSSegmenter.cpp in Sources */,
+				84955A47245891580093B1E4 /* H264Encoder.mm in Sources */,
+				84955A51245891580093B1E4 /* TSMuxer.cpp in Sources */,
+				84955A42245891580093B1E4 /* H264EncoderCpp.cpp in Sources */,
+				84955A63245891580093B1E4 /* BitstreamReader.cpp in Sources */,
+				8495595024588FB30093B1E4 /* CustomHandlerHLS.m in Sources */,
+				84955A5F245891580093B1E4 /* HLSMuxer.mm in Sources */,
+				84955A54245891580093B1E4 /* TSPacket.cpp in Sources */,
+				84955A69245891580093B1E4 /* MediaFrame.cpp in Sources */,
+				84955A57245891580093B1E4 /* PESFormatter.cpp in Sources */,
+				84955A55245891580093B1E4 /* TSPacketizer.cpp in Sources */,
+				84955A40245891580093B1E4 /* mongoose.c in Sources */,
+				84955A62245891580093B1E4 /* AVCFrame.cpp in Sources */,
+				84821A75233C786F00FD77E1 /* CaptureServer.swift in Sources */,
+				84955A49245891580093B1E4 /* AACDecoder.mm in Sources */,
+				84955A65245891580093B1E4 /* Uri.cpp in Sources */,
+				84955A4B245891580093B1E4 /* HLSPlaylistBuilder.cpp in Sources */,
+				84955A44245891580093B1E4 /* AACEncoderCpp.cpp in Sources */,
+				84955A4A245891580093B1E4 /* TSSegment.cpp in Sources */,
+				84955A68245891580093B1E4 /* AVCCParser.cpp in Sources */,
+				84955A56245891580093B1E4 /* PATFormatter.cpp in Sources */,
+				84955A3F245891580093B1E4 /* MongooseDaemon.m in Sources */,
+				84955A45245891580093B1E4 /* AACEncoder.mm in Sources */,
+				84C354FA2335E16B0045482D /* CustomHandler.swift in Sources */,
+				84955A48245891580093B1E4 /* FDKAACEncoder.mm in Sources */,
+				84955A53245891580093B1E4 /* PMTFormatter.cpp in Sources */,
+				84955A64245891580093B1E4 /* BitstreamWriter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C490FA2334790B00E44857 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8486995324781588005B549C /* CaptureServer.swift in Sources */,
+				8486993D247812A0005B549C /* Scopes.swift in Sources */,
+				8486993E247812A0005B549C /* WebSockets.swift in Sources */,
+				8486993F247812A0005B549C /* HttpServerIO.swift in Sources */,
+				84869940247812A0005B549C /* Process.swift in Sources */,
+				84869941247812A0005B549C /* Socket+Server.swift in Sources */,
+				84869942247812A0005B549C /* String+SHA1.swift in Sources */,
+				84869943247812A0005B549C /* String+File.swift in Sources */,
+				84869944247812A0005B549C /* Files.swift in Sources */,
+				84869945247812A0005B549C /* HttpRequest.swift in Sources */,
+				84869946247812A0005B549C /* HttpResponse.swift in Sources */,
+				84869947247812A0005B549C /* HttpServer.swift in Sources */,
+				84869948247812A0005B549C /* Errno.swift in Sources */,
+				84869949247812A0005B549C /* Socket+File.swift in Sources */,
+				8486994A247812A0005B549C /* String+BASE64.swift in Sources */,
+				8486994B247812A0005B549C /* String+Misc.swift in Sources */,
+				8486994C247812A0005B549C /* HttpRouter.swift in Sources */,
+				8486994D247812A0005B549C /* HttpParser.swift in Sources */,
+				8486994E247812A0005B549C /* MimeTypes.swift in Sources */,
+				8486994F247812A0005B549C /* Socket.swift in Sources */,
+				84C758BE23596F35003C4AC6 /* FAQTableViewCell.swift in Sources */,
+				84C758BA23596F35003C4AC6 /* MirroringController.swift in Sources */,
+				FFBF96D423A2744A008D96C3 /* View.swift in Sources */,
+				84B564582476BEC600FD9D6C /* SettingsController.swift in Sources */,
+				84CCBC3723F4FA55009562AE /* ImageMirrorController.swift in Sources */,
+				FFBF96CC23A27381008D96C3 /* AppProtocols.swift in Sources */,
+				FFBF96D623A2745F008D96C3 /* HighlightingButton.swift in Sources */,
+				84CCBC3523F4F2F4009562AE /* VideoMirrorController.swift in Sources */,
+				FFBF96CF23A27381008D96C3 /* StoreObserver.swift in Sources */,
+				846E10AB2461BF190064D9D5 /* ImageBaseMirrorController.swift in Sources */,
+				84439558245F9E5200CC9DB3 /* M3u8MirrorController.swift in Sources */,
+				846E10AD2461C08B0064D9D5 /* BaseMirrorController.swift in Sources */,
+				84CCBC3923F4FD41009562AE /* PDFMirrorController.swift in Sources */,
+				FFBF96D023A27381008D96C3 /* Utilities.swift in Sources */,
+				84E7297E2334AECD006B9900 /* QRScannerView.swift in Sources */,
+				FFBF96D823A2747D008D96C3 /* InAppPurchaseHandler.swift in Sources */,
+				84C758BB23596F35003C4AC6 /* FAQController.swift in Sources */,
+				84C758BD23596F35003C4AC6 /* TableViewCell.swift in Sources */,
+				84400AB024792EEF007B3547 /* Notification+Extension.swift in Sources */,
+				FFBF96D223A27437008D96C3 /* UpgradeToProController.swift in Sources */,
+				FFBF96CA23A27381008D96C3 /* AppDataTypes.swift in Sources */,
+				FFBF96DA23A274ED008D96C3 /* Session.swift in Sources */,
+				84C491022334790B00E44857 /* AppDelegate.swift in Sources */,
+				FFBF96CE23A27381008D96C3 /* StoreManager.swift in Sources */,
+				849D9D1A23F39D8700454E64 /* MainController.swift in Sources */,
+				849D9D1C23F3A65700454E64 /* ScreenMirrorController.swift in Sources */,
+				84CCBC3123F4EA9E009562AE /* AppUtils.swift in Sources */,
+				FFBF96CB23A27381008D96C3 /* AppExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84C354FD2335E16B0045482D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84C354F32335E16B0045482D /* ScreenService */;
+			targetProxy = 84C354FC2335E16B0045482D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84C491052334790B00E44857 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C491062334790B00E44857 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84C354FF2335E16B0045482D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A55E8EAEBA8B129C1E54C1 /* Pods-ScreenService.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ScreenService/BroadcastService.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LB39J6X9G;
+				INFOPLIST_FILE = ScreenService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/fdkaac/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.math.BroadcasterHandler.BroadcastUploadExtension;
+				PRODUCT_NAME = ScreenService;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenService/ScreenService-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/fdkaac/include";
+			};
+			name = Debug;
+		};
+		84C355002335E16B0045482D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691FD61685682104288129E6 /* Pods-ScreenService.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ScreenService/BroadcastService.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LB39J6X9G;
+				INFOPLIST_FILE = ScreenService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/fdkaac/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.math.BroadcasterHandler.BroadcastUploadExtension;
+				PRODUCT_NAME = ScreenService;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenService/ScreenService-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/fdkaac/include";
+			};
+			name = Release;
+		};
+		84C4910E2334791000E44857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84C4910F2334791000E44857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84C491112334791000E44857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 815EA51642FB292CFA663AB9 /* Pods-ScreenCaster.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScreenCaster/ScreenBroadcaster.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LB39J6X9G;
+				INFOPLIST_FILE = ScreenCaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.math.BroadcasterHandler;
+				PRODUCT_NAME = ScreenCaster;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84C491122334791000E44857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2550F596AE9323EF6F5D1F6 /* Pods-ScreenCaster.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScreenCaster/ScreenBroadcaster.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LB39J6X9G;
+				INFOPLIST_FILE = ScreenCaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.math.BroadcasterHandler;
+				PRODUCT_NAME = ScreenCaster;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C355012335E16B0045482D /* Build configuration list for PBXNativeTarget "ScreenService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C354FF2335E16B0045482D /* Debug */,
+				84C355002335E16B0045482D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C490F92334790A00E44857 /* Build configuration list for PBXProject "ScreenCaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C4910E2334791000E44857 /* Debug */,
+				84C4910F2334791000E44857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C491102334791000E44857 /* Build configuration list for PBXNativeTarget "ScreenCaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C491112334791000E44857 /* Debug */,
+				84C491122334791000E44857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84C490F62334790A00E44857 /* Project object */;
+}
